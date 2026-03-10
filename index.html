@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathKey - Plateforme d'Exercices Mathématiques</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="container navbar">
+            <div class="logo">Math<span>Key</span></div>
+            <div class="menu">
+                <a href="#exercices">Exercices</a>
+                <a href="#whatsapp">Expert WhatsApp</a>
+                <a href="#" class="premium-btn">Premium</a>
+            </div>
+        </nav>
+        <div class="container hero-text">
+            <h1>Réussissez vos Maths avec <span>MathKey</span></h1>
+            <p>Accédez à des clés de résolution stratégiques et un support WhatsApp en direct.</p>
+            <div class="actions">
+                <a href="#exercices" class="btn btn-primary">Voir les exercices</a>
+                <a href="https://wa.me/212600000000" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Expert</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="exercices" class="app-section">
+            <div class="app-header">
+                <h2>Banque d'exercices (20)</h2>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Chercher un thème...">
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <button class="filter-btn active" data-cat="Tous">Tous</button>
+                <button class="filter-btn" data-cat="Analyse">Analyse</button>
+                <button class="filter-btn" data-cat="Algèbre">Algèbre</button>
+                <button class="filter-btn" data-cat="Probabilités">Probabilités</button>
+            </div>
+
+            <div class="app-container">
+                <div id="exerciseList" class="list-area"></div>
+                <div id="exerciseDetail" class="detail-area empty">
+                    <i class="fas fa-arrow-left"></i>
+                    <p>Sélectionnez un exercice pour voir la clé et la correction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="whatsapp" class="wa-promo">
+            <div class="wa-box">
+                <i class="fab fa-whatsapp wa-big-icon"></i>
+                <h3>Un exercice vous bloque ?</h3>
+                <p>Envoyez votre photo sur WhatsApp et recevez une aide personnalisée en 15 minutes.</p>
+                <a href="https://wa.me/212600000000" class="btn btn-primary">Envoyer ma photo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Mathpro par Professeur Essannouni Hassane - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
